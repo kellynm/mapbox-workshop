@@ -55,9 +55,6 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ### Learning **'Goal'**
 * Personally useful and relevant, web-based (published to web) interactive mapping application.
 
-### Interest in Interactivity 
-![Image](img/results.gif)
-
 ### Identified Research Themes
 * Solar potential analysis 
 * Acoustic impact of vessel noise on natural soundscapes
@@ -67,6 +64,11 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Geostatistical modeling of dissolved oxygen levels
 * Scene semantic knowledge
 * Dr. Laura Tateosian's funding
+
+### Interest in Interactivity 
+![Image](img/results.gif)
+![Image](img/layers.gif)
+![Image](img/UI.gif)
 
 ## Getting Started
 ### Git
@@ -86,6 +88,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ## Understanding Mapbox Features
 ### Map Layers
 #### Show & hide layers
+![Image](img/showhide_layers.gif)
 ```html
 <!DOCTYPE html>
 <html>
