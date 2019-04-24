@@ -33,6 +33,28 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ![Image](img/layers.gif)
 ![Image](img/UI.gif)
 
+## Understanding Mapbox Features
+### Map Layers
+#### Show & hide layers
+![Image](img/showhide_layers.gif)
+
+#### Adding polygons
+#### 3D Buildings
+#### Adjust a layer's opacity
+#### Animate series of images
+
+### Data Types
+#### Coordinates
+#### Raster
+#### Vector
+
+### User Interaction
+#### Pop up information
+#### Create time slider
+#### Draggable marker
+#### Filter features based on map view
+#### Create hover effect
+
 ## Getting Started
 
 ### Git
@@ -85,16 +107,15 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ### Publishing to Web
 * First, open html content in your text editor of choice and do an overall inspection of its structure:
   * What do you recognize?
+  * What parameters have been set?
   * Can you understand it?
   * What is it calling on? Where? How?
 * Now let's see what it looks like on the web with a quick double click:
 
 ![Image](img/initial_index_open.gif)
 
-## Understanding Mapbox Features
-### Map Layers
+## Making Mapbox Useful
 #### Show & hide layers
-![Image](img/showhide_layers.gif)
 ```html
 <!DOCTYPE html>
 <html>
@@ -233,7 +254,6 @@ Mapbox provides many tools to build maps into your website or web-based applicat
    </body>
 </html>
 ```
-
 #### Adding polygons
 #### 3D Buildings
 #### Adjust a layer's opacity
@@ -250,5 +270,3 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 #### Draggable marker
 #### Filter features based on map view
 #### Create hover effect
-
-## Making Mapbox Useful
