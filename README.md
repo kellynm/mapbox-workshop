@@ -75,7 +75,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Open terminal/cmd:
   * git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
   * cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
-  * download [index.html](./index.html) into the newly created file directory (e.g., mapbox-workshop)
+  * download [index.html](index.html) into the newly created file directory (e.g., mapbox-workshop)
 
 ### Publishing to Web
 * Open html content in your text editor of choice
