@@ -132,10 +132,87 @@ While we're waiting for our changes to be published online, let's look at a few 
 <img src="img/hover.gif" alt="drawing" style="width:400px;"/>
 
 ## Making Mapbox Useful
-### Data Types
-#### Coordinates
+This section is all about the geojson. In R Studio, load either some raster or vector data you've recently been working with. The two code chunks below demonstrate how you can take either data format and easily convert them to geojson using R. 
+<!-- ### Data Types -->
+<!-- #### Coordinates -->
 #### Raster
+```r
+# Load raster
+FL_mask_rast <- raster("FL_2017_data_mask.tif")
+# Convert to vector (polys)
+FL_mask_vect <- rasterToPolygons(FL_mask)
+# Test plots of both formats
+plot(FL_mask_rast)
+plot(FL_mask_vect)
+# Ensure coordinates are in lat/lon
+FL_mask_vect_latlon <- spTransform(FL_mask_vect, CRS("+proj=longlat +datum=WGS84"))
+# Export to geojson
+writeOGR(FL_mask_vect_latlon, "FL_mask_vect_latlon", layer="FL_mask_vect_latlon", driver="GeoJSON") 
+```
 #### Vector
+```r
+# Load Vector field data
+shp_dsn <- "/Users/garrettmillar/Desktop/field_data.shp"
+field_data_shp <- readOGR(path.expand(shp_dsn), 'field_data')
+# Ensure coordinates are in lat/lon
+FL_mask_vect_latlon <- spTransform(field_data_shp, CRS("+proj=longlat +datum=WGS84"))
+# Test plot
+plot(field_data_shp, axes=T)
+# Export to geojson
+writeOGR(field_data_shp, "field_data_shp",
+layer="field_data_shp", driver="GeoJSON") 
+```
+
+Now that you have a workable geojson format of some of your own data:
+1. Upload your data to your Github
+   * Save data into local Git directory
+   * Run same Git workflow as above:
+     * ```git add . ```
+     * ```git commit -m "initial commit"```
+     * ```git push```
+2. Retrieve online data link 
+   * Example: ```"https://raw.githubusercontent.com/mmamanat/gis741/master/rasters/jesup_vect"```
+3. Customize the original index.html with a Mapbox feature of interest
+   1. Change coordinates according to the location of your data:
+      *  ```center: [-81.2023, 28.7302], // starting position```
+   2. In index.html, use the following code chunk (should be inserted after initialization of Mapbox map) as guide to adding your own data to your map.
+```html
+map.on('load', function() {
+
+   map.addSource('jesup_mask', {
+       type: 'geojson',
+       data: 'https://raw.githubusercontent.com/mmamanat/gis741/master/rasters/jesup_vect'
+   });
+
+map.addLayer({
+       'id': 'jesup mask',
+       "type": "fill",
+       "source": "jesup_mask",
+       'layout': {},
+       'paint': {
+           'fill-color': {
+             property: 'value',
+             type: 'exponential',
+             stops: [
+             [1, '#FFEC2A']
+             ],
+             //   [-5,'#204098'],
+             //   [-3.5,'#3645FF'],
+             //   [-2.5, '#9FBAF0'],
+             //   [0, '#F7F7F7'],
+             //   [2.5, '#FD916E'],
+             //   [3.5, '#D83B29'],
+             //   [5, '#B2000C'],
+             //   ]
+           },
+           'fill-opacity': 0.5
+       }
+   }, 'waterway-label');
+
+});
+
+#### Load your data
+
 
 #### Show & hide layers
 ```html
