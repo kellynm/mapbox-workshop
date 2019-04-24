@@ -13,7 +13,38 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Text Editor, Sublime, Atom, Visual Studio Code, etc. 
 * Previously shared index.html file representing skeleton of interactive application in Mapbox. I won’t give you all the answers throughout the tutorial, but this will hopefully serve as a decent basis for working from after the lab if desired.
 
-## The Bones of Mapbox [index.html]:
+## What Are We Covering & Why Does it Matter?
+
+### Learning **'Goal'**
+* Personally useful and relevant, web-based (published to web) interactive mapping application.
+
+### Identified Research Themes
+* Solar potential analysis 
+* Acoustic impact of vessel noise on natural soundscapes
+* Mapping walkability using social media data and GSV imagery
+* Optimization of pest inpection
+* 3D modeling
+* Geostatistical modeling of dissolved oxygen levels
+* Scene semantic knowledge
+* Dr. Laura Tateosian's funding
+
+### Interest in Interactivity 
+![Image](img/results.gif)
+![Image](img/layers.gif)
+![Image](img/UI.gif)
+
+## Getting Started
+
+### Git
+* Create new repo on Github
+  * Example: mapbox-workshop
+* Open terminal/cmd:
+  * git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
+  * cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
+  * download [index.html](index.html) into the newly created file directory (e.g., mapbox-workshop)
+
+
+### The Bones of Mapbox [index.html]:
 ```html
 <!DOCTYPE html>
 <html>
@@ -50,38 +81,13 @@ Mapbox provides many tools to build maps into your website or web-based applicat
    </body>
 </html>
 ```
-## What Are We Covering & Why Does it Matter?
-
-### Learning **'Goal'**
-* Personally useful and relevant, web-based (published to web) interactive mapping application.
-
-### Identified Research Themes
-* Solar potential analysis 
-* Acoustic impact of vessel noise on natural soundscapes
-* Mapping walkability using social media data and GSV imagery.
-* Optimization of pest inpection
-* 3D modeling
-* Geostatistical modeling of dissolved oxygen levels
-* Scene semantic knowledge
-* Dr. Laura Tateosian's funding
-
-### Interest in Interactivity 
-![Image](img/results.gif)
-![Image](img/layers.gif)
-![Image](img/UI.gif)
-
-## Getting Started
-### Git
-* Create new repo on Github
-  * Example: mapbox-workshop
-* Open terminal/cmd:
-  * git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
-  * cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
-  * download [index.html](index.html) into the newly created file directory (e.g., mapbox-workshop)
 
 ### Publishing to Web
-* Open html content in your text editor of choice
-* Now, let's see what it looks like on the web with a double click:
+* First, open html content in your text editor of choice and do an overall inspection of its structure:
+  * What do you recognize?
+  * Can you understand it?
+  * What is it calling on? Where? How?
+* Now let's see what it looks like on the web with a quick double click:
 
 ![Image](img/initial_index_open.gif)
 
