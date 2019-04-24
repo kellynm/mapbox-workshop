@@ -24,29 +24,47 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 
 Previously shared index.html:
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='utf-8' />
+      <title>Mapbox GL Workshop</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+      <style>
+         body { margin:0; padding:0; }
+         #map { position:absolute; top:0; bottom:0; width:100%; }
+      </style>
+   </head>
+   <body>
+      <div id='map'></div>
+      <script>
+         // mapboxgl.accessToken = '<YOUR_TOKEN_KEY_HERE_PLS>'; // don't keep '<' & '>' when pasting token
+         mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NtaWxsYXIiLCJhIjoiY2pvcDhrbGl4MDFvaTNrczR0d2hxcjdnNSJ9.JYgBw6y2pEq_AEAOCaoQpw';
+         
+         var map = new mapboxgl.Map({
+         container: 'map', // container id
+         style: 'mapbox://styles/mapbox/streets-v10', //hosted style id;  
+         //others: 
+         //	'mapbox://styles/mapbox/light-v10'
+         //	'mapbox://styles/mapbox/streets-v10' 
+         //	'mapbox://styles/mapbox/dark-v10'
+         //	'mapbox://styles/mapbox/outdoors-v10'  
+         //	'mapbox://styles/mapbox/satellite-v10' 
+         //	'mapbox://styles/mapbox/traffic-night-v2'
+         center: [-78.6382, 35.7796], // change starting position to coordinates associated w/ your data.
+         zoom: 6 // starting zoom
+         });
+      </script>
+   </body>
+</html>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
+### 
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gcmillar/mapbox-workshop/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### 
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
