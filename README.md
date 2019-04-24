@@ -107,7 +107,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 While we're waiting for our changes to be published online, let's look at a few examples of some useful Mapbox features.
 ### Map Layers
 #### Show & hide layers
-<img src="img/showhide_layers.gif" alt="drawing" style="width:450px;"/>
+<img src="img/showhide_layers.gif" alt="drawing" style="width:400px;"/>
 
 #### Adding polygons
 <img src="img/add_polygon.gif" alt="drawing" style="width:600px;"/>
