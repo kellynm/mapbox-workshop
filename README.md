@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Mapbox GL - An Interactive Mapping Platform for Any & All Geospatial Data
 
 You can use the [editor on GitHub](https://github.com/gcmillar/mapbox-workshop/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<iframe src="https://gcmillar.github.io/stress3d/"/>
 
 ### Markdown
 
