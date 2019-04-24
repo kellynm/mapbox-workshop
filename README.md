@@ -123,17 +123,18 @@ While we're waiting for our changes to be published online, let's look at a few 
 <img src="img/animate_imgs.gif" alt="drawing" style="width:400px;"/>
 
 ### User Interaction
-#### Pop up information
 #### Create time slider
 <img src="img/time_slide.gif" alt="drawing" style="width:400px;"/>
 
-#### Draggable marker
-#### Filter features based on map view
 #### Create hover effect
 <img src="img/hover.gif" alt="drawing" style="width:400px;"/>
 
+#### [Draggable marker](https://docs.mapbox.com/mapbox-gl-js/example/drag-a-marker/)
+
+#### [Filter features based on map view](https://docs.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
+
 ## Making Mapbox Useful
-This section is all about the geojson. In R Studio, load either some raster or vector data you've recently been working with. The two code chunks below demonstrate how you can take either data format and easily convert them to geojson using R. 
+Its all about the geojson now. In R Studio, load either some raster or vector data you've recently been working with. The two code chunks below demonstrate how you can take either data format and easily convert them to geojson using R. 
 <!-- ### Data Types -->
 <!-- #### Coordinates -->
 #### Raster
@@ -165,9 +166,9 @@ layer="field_data_shp", driver="GeoJSON")
 ```
 
 Now that you have a workable geojson format of some of your own data:
-1. Upload your data to your Github
-   * Save data into local Git directory
-   * Run same Git workflow as above:
+1. Upload your data to your Github by:
+   * Saving data into local Git directory
+   * Running same Git workflow as above:
      * ```git add . ```
      * ```git commit -m "initial commit"```
      * ```git push```
@@ -197,25 +198,15 @@ map.addLayer({
              stops: [
              [1, '#FFEC2A']
              ],
-             //   [-5,'#204098'],
-             //   [-3.5,'#3645FF'],
-             //   [-2.5, '#9FBAF0'],
-             //   [0, '#F7F7F7'],
-             //   [2.5, '#FD916E'],
-             //   [3.5, '#D83B29'],
-             //   [5, '#B2000C'],
-             //   ]
            },
            'fill-opacity': 0.5
        }
    }, 'waterway-label');
-
 });
+```
+**Note**: If you don't have your data ready, feel free to use the data links in provided examples to explore how you could apply the same techniques to your own data in the future.
 
-#### Load your data
-
-
-#### Show & hide layers
+<!-- #### Show & hide layers
 ```html
 <!DOCTYPE html>
 <html>
@@ -353,7 +344,9 @@ map.addLayer({
       </script>
    </body>
 </html>
-```
+``` -->
+
+<!-- ### Example Code
 #### Adding polygons
 #### 3D Buildings
 #### Adjust a layer's opacity
@@ -369,4 +362,4 @@ map.addLayer({
 #### Create time slider
 #### Draggable marker
 #### Filter features based on map view
-#### Create hover effect
+#### Create hover effect -->
