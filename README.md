@@ -31,9 +31,9 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Dr. Laura Tateosian's funding
 
 ### Interest in Interactivity 
-![Image](img/results.gif)
-![Image](img/layers.gif)
-![Image](img/UI.gif)
+<img src="img/results.gif" alt="drawing" style="width:673px;"/>
+<img src="img/layers.gif" alt="drawing" style="width:673px;"/>
+<img src="img/UI.gif" alt="drawing" style="width:673px;"/>
 
 ## Getting Started
 
@@ -93,7 +93,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * **Insert your own token ID**
 * Save file
 * Now let's see what it looks like on the web with a quick double click:
-![Image](img/initial_index_open.gif)
+<img src="img/initial_index_open.gif" alt="drawing" style="width:673px;"/>
 * Return to your terminal/cmd window
 * Check on the directory's status with: ```git status```
 * Newly inserted index.html should be shown in red as modified / added content
@@ -107,17 +107,19 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 While we're waiting for our changes to be published online, let's look at a few examples of some useful Mapbox features.
 ### Map Layers
 #### Show & hide layers
-![Image](img/showhide_layers.gif)
+<img src="img/showhide_layers.gif" alt="drawing" style="width:673px;"/>
 
 #### Adding polygons
-![Image](img/add_polygon.gif)
+<img src="img/add_polygon.gif" alt="drawing" style="width:673px;"/>
 
 #### 3D Buildings
-![Image](img/3d_buildings.gif)
+<img src="img/3d_buildings.gif" alt="drawing" style="width:673px;"/>
+
 #### Adjust a layer's opacity
-![Image](img/adjust_opacity.gif)
+<img src="img/adjust_opacity.gif" alt="drawing" style="width:673px;"/>
+
 #### Animate series of images
-![Image](img/animate_imgs.gif)
+<img src="img/animate_imgs.gif" alt="drawing" style="width:673px;"/>
 
 ### User Interaction
 #### Pop up information
@@ -125,6 +127,26 @@ While we're waiting for our changes to be published online, let's look at a few 
 #### Draggable marker
 #### Filter features based on map view
 #### Create hover effect
+```html
+// When the user moves their mouse over the state-fill layer, we'll update the feature state for the feature under the mouse.
+map.on("mousemove", "state-fills", function(e) {
+  if (e.features.length > 0) {
+    if (hoveredStateId) {
+      map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
+      }
+        hoveredStateId = e.features[0].id;
+          map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: true});
+  }
+});
+ 
+// When the mouse leaves the state-fill layer, update the feature state of the previously hovered feature.
+  map.on("mouseleave", "state-fills", function() {
+      if (hoveredStateId) {
+      map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
+    }
+    hoveredStateId =  null;
+});
+```
 
 ## Making Mapbox Useful
 ### Data Types
