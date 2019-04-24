@@ -1,4 +1,4 @@
-## Mapbox GL - An Interactive Mapping Platform for Any & All Geospatial Data
+## Mapbox GL - An Interactive Mapping Platform for Geospatial Data
 
 Mapbox provides many tools to build maps into your website or web-based application, including Mapbox GL JS and Mapbox.js. Mapbox GL JS and Mapbox.js are both open source JavaScript libraries you can use to display your Mapbox maps, add interactivity, and customize the map experience in your application. There are some important differences between the two libraries, though, that will impact how you use them to build your apps.
 
