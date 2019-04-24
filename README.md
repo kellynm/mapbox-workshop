@@ -94,11 +94,12 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Save file
 * Now let's see what it looks like on the web with a quick double click:
 <img src="img/initial_index_open.gif" alt="drawing" style="width:600px;"/>
+
 * Return to your terminal/cmd window
 * Check on the directory's status with: ```git status```
 * Newly inserted index.html should be shown in red as modified / added content
 * Run: 
-   * ```git add . ```
+   * ```git add .```
    * ```git commit -m "initial commit"```
    * ```git push```
 
