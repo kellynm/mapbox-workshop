@@ -40,6 +40,8 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ### Git
 * Create new repo on Github
   * Example: mapbox-workshop
+* Go to the repo settings tab and set the Github Pages source to the master branch:
+  * ![Image](img/gh_pages.png)
 * Open terminal/cmd to clone repo to local directory:
   * ```git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"```
   * ```git cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"```
@@ -97,21 +99,25 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Newly inserted index.html should be shown in red as modified / added content
 * Run: 
    * ```git add . ```
+   * ```git commit -m "initial commit"```
+   * ```git push```
+
 
 ## Understanding Mapbox Features
+While we're waiting for our changes to be published online, let's look at a few examples of some useful Mapbox features.
 ### Map Layers
 #### Show & hide layers
 ![Image](img/showhide_layers.gif)
 
 #### Adding polygons
-#### 3D Buildings
-#### Adjust a layer's opacity
-#### Animate series of images
+![Image](img/add_polygon.gif)
 
-### Data Types
-#### Coordinates
-#### Raster
-#### Vector
+#### 3D Buildings
+![Image](img/3d_buildings.gif)
+#### Adjust a layer's opacity
+![Image](img/adjust_opacity.gif)
+#### Animate series of images
+![Image](img/animate_imgs.gif)
 
 ### User Interaction
 #### Pop up information
@@ -121,6 +127,11 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 #### Create hover effect
 
 ## Making Mapbox Useful
+### Data Types
+#### Coordinates
+#### Raster
+#### Vector
+
 #### Show & hide layers
 ```html
 <!DOCTYPE html>
