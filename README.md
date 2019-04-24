@@ -114,7 +114,7 @@ While we're waiting for our changes to be published online, let's look at a few 
 <img src="img/add_polygon.gif" alt="drawing" style="width:400px;"/>
 
 #### 3D Buildings
-<img src="img/3d_buildings.gif" alt="drawing" style="width:400px;"/>
+<img src="img/3d_buildings.gif" alt="drawing" style="width:380px;"/>
 
 #### Adjust a layer's opacity
 <img src="img/adjust_opacity.gif" alt="drawing" style="width:400px;"/>
@@ -168,13 +168,13 @@ layer="field_data_shp", driver="GeoJSON")
 Now that you have a workable geojson format of some of your own data:
 1. Upload your data to your Github by:
    * Saving data into local Git directory
-   * Running same Git workflow as above:
+   * Running same Git workflow as earlier:
      * ```git add . ```
-     * ```git commit -m "initial commit"```
+     * ```git commit -m "upload data"```
      * ```git push```
 2. Retrieve online data link 
    * Example: ```"https://raw.githubusercontent.com/mmamanat/gis741/master/rasters/jesup_vect"```
-3. Customize the original index.html with a Mapbox feature of interest
+3. Customize the original index.html with a Mapbox feature of choice
    1. Change coordinates according to the location of your data:
       *  ```center: [-81.2023, 28.7302], // starting position```
    2. In index.html, use the following code chunk (should be inserted after initialization of Mapbox map) as guide to adding your own data to your map.
