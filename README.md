@@ -114,7 +114,7 @@ While we're waiting for our changes to be published online, let's look at a few 
 <img src="img/add_polygon.gif" alt="drawing" style="width:400px;"/>
 
 #### 3D Buildings
-<img src="img/3d_buildings.gif" alt="drawing" style="width:380px;"/>
+<img src="img/3d_buildings.gif" alt="drawing" style="width:400px;"/>
 
 #### Adjust a layer's opacity
 <img src="img/adjust_opacity.gif" alt="drawing" style="width:400px;"/>
