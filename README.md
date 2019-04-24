@@ -23,7 +23,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Previously shared index.html file representing skeleton of interactive application in Mapbox. I won’t give you all the answers throughout the tutorial, but this will hopefully serve as a decent basis for working from after the lab if desired.
 
 Previously shared index.html:
-```markdown
+```html
 <!DOCTYPE html>
 <html>
    <head>
