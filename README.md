@@ -11,7 +11,9 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * Mapbox account and access token.
 * Mapbox GL JS, a Javascript Library.
 * Text Editor, Sublime, Atom, Visual Studio Code, etc. 
-* Previously shared index.html file representing skeleton of interactive application in Mapbox. I won’t give you all the answers throughout the tutorial, but this will hopefully serve as a decent basis for working from after the lab if desired.
+* R Studio
+* sp data object of choice (in R Studio)
+* index.html file representing skeleton of interactive application in Mapbox. I won’t give you all the answers throughout the tutorial, but this will hopefully serve as a decent basis for working from after the lab if desired.
 
 ## What Are We Covering & Why Does it Matter?
 
@@ -33,37 +35,15 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 ![Image](img/layers.gif)
 ![Image](img/UI.gif)
 
-## Understanding Mapbox Features
-### Map Layers
-#### Show & hide layers
-![Image](img/showhide_layers.gif)
-
-#### Adding polygons
-#### 3D Buildings
-#### Adjust a layer's opacity
-#### Animate series of images
-
-### Data Types
-#### Coordinates
-#### Raster
-#### Vector
-
-### User Interaction
-#### Pop up information
-#### Create time slider
-#### Draggable marker
-#### Filter features based on map view
-#### Create hover effect
-
 ## Getting Started
 
 ### Git
 * Create new repo on Github
   * Example: mapbox-workshop
-* Open terminal/cmd:
-  * git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
-  * cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
-  * download [index.html](index.html) into the newly created file directory (e.g., mapbox-workshop)<!-- ### The Bones of Mapbox [index.html]: -->
+* Open terminal/cmd to clone repo to local directory:
+  * ```git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"```
+  * ```git cd "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"```
+* Download (or copy & paste into editor) [index.html](index.html) into the newly created file directory (e.g., mapbox-workshop)<!-- ### The Bones of Mapbox [index.html]: -->
   * It should look like:
 ```html
 <!DOCTYPE html>
@@ -108,9 +88,37 @@ Mapbox provides many tools to build maps into your website or web-based applicat
   * What parameters have been set?
   * Can you understand it?
   * What is it calling on? Where? How?
+* **Insert your own token ID**
+* Save file
 * Now let's see what it looks like on the web with a quick double click:
-
 ![Image](img/initial_index_open.gif)
+* Return to your terminal/cmd window
+* Check on the directory's status with: ```git status```
+* Newly inserted index.html should be shown in red as modified / added content
+* Run: 
+   * ```git add . ```
+
+## Understanding Mapbox Features
+### Map Layers
+#### Show & hide layers
+![Image](img/showhide_layers.gif)
+
+#### Adding polygons
+#### 3D Buildings
+#### Adjust a layer's opacity
+#### Animate series of images
+
+### Data Types
+#### Coordinates
+#### Raster
+#### Vector
+
+### User Interaction
+#### Pop up information
+#### Create time slider
+#### Draggable marker
+#### Filter features based on map view
+#### Create hover effect
 
 ## Making Mapbox Useful
 #### Show & hide layers
