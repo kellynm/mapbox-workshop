@@ -70,7 +70,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 
 ## Getting Started
 ### Git
-* Create new Github repo
+* Create new repo on Github
   * Example: mapbox-workshop
 * Open terminal/cmd:
   * git clone "https://github.com/<'your_user_name_here'>/mapbox-workshop.git"
@@ -83,6 +83,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 
 ![Image](img/initial_index_open.gif)
 
+## Understanding Mapbox Features
 ### Map Layers
 * Show and hide layers
 * Adding polygons
