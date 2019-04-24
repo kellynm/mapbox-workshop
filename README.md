@@ -93,7 +93,7 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 * **Insert your own token ID**
 * Save file
 * Now let's see what it looks like on the web with a quick double click:
-<img src="img/initial_index_open.gif" alt="drawing" style="width:673px;"/>
+<img src="img/initial_index_open.gif" alt="drawing" style="width:600px;"/>
 * Return to your terminal/cmd window
 * Check on the directory's status with: ```git status```
 * Newly inserted index.html should be shown in red as modified / added content
@@ -107,19 +107,19 @@ Mapbox provides many tools to build maps into your website or web-based applicat
 While we're waiting for our changes to be published online, let's look at a few examples of some useful Mapbox features.
 ### Map Layers
 #### Show & hide layers
-<img src="img/showhide_layers.gif" alt="drawing" style="width:673px;height:420px"/>
+<img src="img/showhide_layers.gif" alt="drawing" style="width:600px;"/>
 
 #### Adding polygons
-<img src="img/add_polygon.gif" alt="drawing" style="width:673px;height:420px"/>
+<img src="img/add_polygon.gif" alt="drawing" style="width:600px;"/>
 
 #### 3D Buildings
-<img src="img/3d_buildings.gif" alt="drawing" style="width:673px;height:420px"/>
+<img src="img/3d_buildings.gif" alt="drawing" style="width:600px;"/>
 
 #### Adjust a layer's opacity
-<img src="img/adjust_opacity.gif" alt="drawing" style="width:673px;height:420px"/>
+<img src="img/adjust_opacity.gif" alt="drawing" style="width:600px;"/>
 
 #### Animate series of images
-<img src="img/animate_imgs.gif" alt="drawing" style="width:673px;height:420px"/>
+<img src="img/animate_imgs.gif" alt="drawing" style="width:600px;"/>
 
 ### User Interaction
 #### Pop up information
