@@ -110,43 +110,26 @@ While we're waiting for our changes to be published online, let's look at a few 
 <img src="img/showhide_layers.gif" alt="drawing" style="width:400px;"/>
 
 #### Adding polygons
-<img src="img/add_polygon.gif" alt="drawing" style="width:600px;"/>
+<img src="img/add_polygon.gif" alt="drawing" style="width:400px;"/>
 
 #### 3D Buildings
-<img src="img/3d_buildings.gif" alt="drawing" style="width:600px;"/>
+<img src="img/3d_buildings.gif" alt="drawing" style="width:400px;"/>
 
 #### Adjust a layer's opacity
-<img src="img/adjust_opacity.gif" alt="drawing" style="width:600px;"/>
+<img src="img/adjust_opacity.gif" alt="drawing" style="width:400px;"/>
 
 #### Animate series of images
-<img src="img/animate_imgs.gif" alt="drawing" style="width:600px;"/>
+<img src="img/animate_imgs.gif" alt="drawing" style="width:400px;"/>
 
 ### User Interaction
 #### Pop up information
 #### Create time slider
+<img src="img/time_slide.gif" alt="drawing" style="width:400px;"/>
+
 #### Draggable marker
 #### Filter features based on map view
 #### Create hover effect
-```html
-// When the user moves their mouse over the state-fill layer, we'll update the feature state for the feature under the mouse.
-map.on("mousemove", "state-fills", function(e) {
-  if (e.features.length > 0) {
-    if (hoveredStateId) {
-      map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
-      }
-        hoveredStateId = e.features[0].id;
-          map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: true});
-  }
-});
- 
-// When the mouse leaves the state-fill layer, update the feature state of the previously hovered feature.
-  map.on("mouseleave", "state-fills", function() {
-      if (hoveredStateId) {
-      map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
-    }
-    hoveredStateId =  null;
-});
-```
+<img src="img/hover.gif" alt="drawing" style="width:400px;"/>
 
 ## Making Mapbox Useful
 ### Data Types
