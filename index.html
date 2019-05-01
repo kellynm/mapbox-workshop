@@ -30,6 +30,39 @@ style: 'mapbox://styles/mapbox/streets-v10', //hosted style id;
 center: [-78.6382, 35.7796], // change starting position to coordinates associated w/ your data.
 zoom: 6 // starting zoom
 });
+
+map.addSource('origin', {
+                  type: 'GeoJSON',
+                  data: 'https://github.com/kellynm/mapbox-workshop/blob/master/origin'
+              });
+              //  # -- Add source of data as map layer -- #
+              // # Continuing with the same example data, we can find out what the property value 
+              // of interests' range / interquartile ranges are (recommended to do in R considering 
+              // it should still be loaded in your environment)
+              // # we then take the data values (I've found 5 values tend to be sufficient for some 
+              // straightforward color mapping), and associate them with HEX color codes 
+              // (e.g., #fff = white) by adding "stops". Done like below:
+              map.addLayer({
+               'id': 'origin-points',
+               "type": "fill",
+               "source": "origin",
+               'layout': {},
+               'paint': {
+                   'fill-color': {
+                     property: 'origin',
+                     type: 'exponential',
+                     stops: [
+                     [8.312620, '#edf8fb'],
+                     [8.656304, '#b2e2e2'],
+                     [8.7, '#66c2a4'],
+                     [8.9, '#2ca25f'],
+                     [9.119719, '#006d2c']
+                     ],
+                   },
+                   'fill-opacity': 0.2
+               }
+           });
+
 </script>
  
 </body>
